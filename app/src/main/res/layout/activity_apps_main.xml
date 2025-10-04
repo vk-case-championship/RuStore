@@ -82,14 +82,14 @@
                     android:layout_height="28dp"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="13dp"
-                    android:src="@drawable/ic_charades"
+                    android:src="@drawable/ic_banks"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="17dp"
-                    android:text="Шарады"
+                    android:text="<Банки>"
                     android:textSize="15sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -111,14 +111,14 @@
                     android:layout_height="28dp"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="13dp"
-                    android:src="@drawable/ic_sudoku_2"
+                    android:src="@drawable/ic_notes"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="17dp"
-                    android:text="Судоку"
+                    android:text="Заметки"
                     android:textSize="15sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -140,14 +140,14 @@
                     android:layout_height="28dp"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="13dp"
-                    android:src="@drawable/ic_learning"
+                    android:src="@drawable/ic_maps"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="17dp"
-                    android:text="Обучение"
+                    android:text="Карты"
                     android:textSize="15sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -217,7 +217,7 @@
                 <ImageView
                     android:layout_width="95dp"
                     android:layout_height="95dp"
-                    android:src="@mipmap/ic_clash_of_clans"/>
+                    android:src="@mipmap/ic_sber"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="12dp"
@@ -245,7 +245,7 @@
                 <ImageView
                     android:layout_width="95dp"
                     android:layout_height="95dp"
-                    android:src="@mipmap/ic_subwey_surfers"/>
+                    android:src="@mipmap/ic_t_bank"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="12dp"
@@ -273,7 +273,7 @@
                 <ImageView
                     android:layout_width="95dp"
                     android:layout_height="95dp"
-                    android:src="@mipmap/ic_crossy_road"/>
+                    android:src="@mipmap/ic_vtb_bank"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="12dp"
@@ -301,7 +301,7 @@
                 <ImageView
                     android:layout_width="95dp"
                     android:layout_height="95dp"
-                    android:src="@mipmap/ic_roblox"/>
+                    android:src="@mipmap/ic_alfa_bank"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="12dp"
@@ -357,7 +357,7 @@
                 <ImageView
                     android:layout_width="95dp"
                     android:layout_height="95dp"
-                    android:src="@mipmap/ic_clash_royale"/>
+                    android:src="@mipmap/ic_gos_uslugi"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="12dp"
@@ -385,7 +385,7 @@
                 <ImageView
                     android:layout_width="95dp"
                     android:layout_height="95dp"
-                    android:src="@mipmap/ic_pokemon_go"/>
+                    android:src="@mipmap/ic_kaspersky"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="12dp"
@@ -413,7 +413,7 @@
                 <ImageView
                     android:layout_width="95dp"
                     android:layout_height="95dp"
-                    android:src="@mipmap/ic_brawl_stars"/>
+                    android:src="@mipmap/ic_avito"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="12dp"
@@ -441,7 +441,7 @@
                 <ImageView
                     android:layout_width="95dp"
                     android:layout_height="95dp"
-                    android:src="@mipmap/ic_geometry_dash"/>
+                    android:src="@mipmap/ic_ozon"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="12dp"
@@ -475,7 +475,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="140dp"
-            android:src="@drawable/ic_games_active"
+            android:src="@drawable/ic_games"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -483,7 +483,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_apps"
+            android:src="@drawable/ic_apps_active"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView2"
             app:layout_constraintTop_toTopOf="parent"
@@ -495,7 +495,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="140dp"
             android:text="игры"
-            android:textColor="#273B8D"
+            android:textColor="#ADADAD"
             android:textSize="11.75sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView2" />
@@ -504,7 +504,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="приложения"
-            android:textColor="#ADADAD"
+            android:textColor="#273B8D"
             android:textSize="11.75sp"
             app:layout_constraintStart_toEndOf="@+id/textView"
             app:layout_constraintTop_toBottomOf="@+id/imageView2"
