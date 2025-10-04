@@ -471,7 +471,7 @@
         android:background="#80FEFEFE">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/games_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="140dp"
@@ -481,11 +481,12 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
+            android:id="@+id/apps_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_apps"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintStart_toEndOf="@+id/games_icon"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginStart="53.5dp"/>
 
@@ -498,7 +499,7 @@
             android:textColor="#273B8D"
             android:textSize="11.75sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+            app:layout_constraintTop_toBottomOf="@+id/games_icon" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -507,7 +508,7 @@
             android:textColor="#ADADAD"
             android:textSize="11.75sp"
             app:layout_constraintStart_toEndOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/games_icon"
             android:layout_marginLeft="30dp"/>
 
 
