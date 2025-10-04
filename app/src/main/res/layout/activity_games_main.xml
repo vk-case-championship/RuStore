@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/shape_search_bar_footer"
+        android:backgroundTint="#F5F6FA">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="Поищем вместе..."
+            android:textColor="#8F959E"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="84dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="23dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_bar">
+
+        <TextView
+            android:id="@+id/category_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:text="Категории"
+            android:textColor="#1D1E20"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="162dp"
+            android:text="Смотреть всё"
+            android:textColor="#8F959E"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/category_text_view"
+            app:layout_constraintStart_toEndOf="@+id/category_text_view" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/category_text_view">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_search_bar_footer"
+                android:backgroundTint="#D7DFFF">
+
+                <ImageView
+                    android:id="@+id/imageView_charades"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/ic_charades"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:text="Шарады"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView_charades"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/shape_search_bar_footer"
+                android:backgroundTint="#D7DFFF">
+
+                <ImageView
+                    android:id="@+id/imageView_sudoku"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/ic_sudoku_2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:text="Судоку"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView_sudoku"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/shape_search_bar_footer"
+                android:backgroundTint="#D7DFFF">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/ic_learning"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:text="Обучение"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/shape_search_bar_footer"
+                android:backgroundTint="#D7DFFF">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/ic_charades"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:text="Шарады"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/top_apps"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:text="Топ 10 в 2025"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="31dp"
+        android:textColor="#1D1E20"
+        android:textSize="17sp"/>
+
+    <HorizontalScrollView
+        android:id="@+id/top_10"
+        android:layout_width="400dp"
+        android:layout_height="148dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_apps"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="23dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="148dp">
+
+            <LinearLayout
+                android:layout_width="95dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:src="@mipmap/ic_clash_of_clans"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:text="Clash Of Clans"
+                    android:textSize="8sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="19sp"
+                    android:text="description description description description"
+                    android:textSize="8sp"
+                    android:textColor="#B6B6B6"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="9sp"
+                    android:text="Игры"
+                    android:textSize="8sp"
+                    android:textColor="#8F98FF"
+                    android:layout_marginTop="6dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="95dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp">
+                <ImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:src="@mipmap/ic_subwey_surfers"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:text="Clash Of Clans"
+                    android:textSize="8sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="19sp"
+                    android:text="description description description description"
+                    android:textSize="8sp"
+                    android:textColor="#B6B6B6"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="9sp"
+                    android:text="Игры"
+                    android:textSize="8sp"
+                    android:textColor="#8F98FF"
+                    android:layout_marginTop="6dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="95dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp">
+                <ImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:src="@mipmap/ic_crossy_road"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:text="Clash Of Clans"
+                    android:textSize="8sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="19sp"
+                    android:text="description description description description"
+                    android:textSize="8sp"
+                    android:textColor="#B6B6B6"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="9sp"
+                    android:text="Игры"
+                    android:textSize="8sp"
+                    android:textColor="#8F98FF"
+                    android:layout_marginTop="6dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="95dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp">
+                <ImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:src="@mipmap/ic_roblox"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:text="Clash Of Clans"
+                    android:textSize="8sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="19sp"
+                    android:text="description description description description"
+                    android:textSize="8sp"
+                    android:textColor="#B6B6B6"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="9sp"
+                    android:text="Игры"
+                    android:textSize="8sp"
+                    android:textColor="#8F98FF"
+                    android:layout_marginTop="6dp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/special_for_you"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:text="Специально для вас"
+        android:textColor="#1D1E20"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_10"
+        android:layout_marginTop="29dp"
+        android:layout_marginStart="20dp"/>
+
+    <HorizontalScrollView
+        app:layout_goneMarginTop="15dp"
+        android:layout_width="400dp"
+        android:layout_height="148dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/special_for_you"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="23dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="148dp">
+
+            <LinearLayout
+                android:layout_width="95dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:src="@mipmap/ic_clash_royale"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:text="Clash Of Clans"
+                    android:textSize="8sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="19sp"
+                    android:text="description description description description"
+                    android:textSize="8sp"
+                    android:textColor="#B6B6B6"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="9sp"
+                    android:text="Игры"
+                    android:textSize="8sp"
+                    android:textColor="#8F98FF"
+                    android:layout_marginTop="6dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="95dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp">
+                <ImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:src="@mipmap/ic_pokemon_go"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:text="Clash Of Clans"
+                    android:textSize="8sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="19sp"
+                    android:text="description description description description"
+                    android:textSize="8sp"
+                    android:textColor="#B6B6B6"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="9sp"
+                    android:text="Игры"
+                    android:textSize="8sp"
+                    android:textColor="#8F98FF"
+                    android:layout_marginTop="6dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="95dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp">
+                <ImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:src="@mipmap/ic_brawl_stars"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:text="Clash Of Clans"
+                    android:textSize="8sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="19sp"
+                    android:text="description description description description"
+                    android:textSize="8sp"
+                    android:textColor="#B6B6B6"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="9sp"
+                    android:text="Игры"
+                    android:textSize="8sp"
+                    android:textColor="#8F98FF"
+                    android:layout_marginTop="6dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="95dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp">
+                <ImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:src="@mipmap/ic_geometry_dash"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:text="Clash Of Clans"
+                    android:textSize="8sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="19sp"
+                    android:text="description description description description"
+                    android:textSize="8sp"
+                    android:textColor="#B6B6B6"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="9sp"
+                    android:text="Игры"
+                    android:textSize="8sp"
+                    android:textColor="#8F98FF"
+                    android:layout_marginTop="6dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#80FEFEFE">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:src="@drawable/ic_games"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_apps"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="53.5dp"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:text="игры"
+            android:textColor="#273B8D"
+            android:textSize="11.75sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="приложения"
+            android:textColor="#ADADAD"
+            android:textSize="11.75sp"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            android:layout_marginLeft="30dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
