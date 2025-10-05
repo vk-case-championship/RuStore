@@ -41,6 +41,10 @@
             android:name=".activities.StartOnboardingActivity"
             android:exported="true">
         </activity>
+        <activity android:name=".activities.Onboarding2Activity"
+            android:exported="true">
+
+        </activity>
         <receiver android:name=".apk.DownloadCompletedReceiver" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
