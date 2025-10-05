@@ -1,10 +1,11 @@
-package ru.rchudinov.rustore
+package ru.rchudinov.rustore.activities
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import ru.rchudinov.rustore.R
 
 class AppsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

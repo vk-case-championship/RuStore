@@ -1,4 +1,4 @@
-package ru.rchudinov.rustore
+package ru.rchudinov.rustore.activities
 
 import android.graphics.BitmapFactory
 import android.os.Bundle
@@ -7,6 +7,7 @@ import android.widget.FrameLayout
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import ru.rchudinov.rustore.R
 import java.io.IOException
 
 class GosActivity: AppCompatActivity() {

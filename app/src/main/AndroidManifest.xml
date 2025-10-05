@@ -17,7 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RuStore">
         <activity
-            android:name=".SplashActivity"
+            android:name=".activities.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,15 +26,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".GamesActivity"
+            android:name=".activities.GamesActivity"
             android:exported="true">
         </activity>
         <activity
-            android:name=".AppsActivity"
+            android:name=".activities.AppsActivity"
             android:exported="true">
         </activity>
         <activity
-            android:name=".GosActivity"
+            android:name=".activities.GosActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".activities.StartOnboardingActivity"
             android:exported="true">
         </activity>
         <receiver android:name=".apk.DownloadCompletedReceiver" android:exported="true">
