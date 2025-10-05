@@ -11,10 +11,14 @@ class AppsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_apps_main)
         enableEdgeToEdge()
-
+        val gosView: ImageView = findViewById(R.id.gos_uslugi)
         val imageView: ImageView = findViewById(R.id.games_icon)
         imageView.setOnClickListener {
             val intent = Intent(this, GamesActivity::class.java)
+            startActivity(intent)
+        }
+        gosView.setOnClickListener {
+            val intent = Intent(this, GosActivity::class.java)
             startActivity(intent)
         }
 

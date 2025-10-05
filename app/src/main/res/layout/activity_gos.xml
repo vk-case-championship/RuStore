@@ -1,6 +1,230 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="34dp"
+        android:layout_marginTop="46dp"
+        android:src="@drawable/ic_back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="98dp"
+        android:src="@mipmap/ic_gos_uslugi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginTop="109dp"
+        android:text="Госуслуги"
+        android:textColor="#1D1E20"
+        android:textSize="21sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="12dp"
+        android:text="Минцифры России"
+        android:textColor="#8F98FF"
+        android:textSize="10.96sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:layout_marginStart="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="73dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="48dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="19dp"
+                android:text="4,3"
+                android:textColor="#1D1E20"
+                android:textSize="21sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="73dp"
+                android:layout_height="12dp"
+                android:text="2 млн отзывов"
+                android:textColor="#B6B6B6"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="92dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="46dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="91dp"
+                android:layout_height="29dp"
+                android:text="100 млн"
+                android:textColor="#1D1E20"
+                android:textSize="21sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="73dp"
+                android:layout_height="12dp"
+                android:layout_marginStart="13dp"
+                android:text="скачиваний"
+                android:textColor="#B6B6B6"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="57dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="46dp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="48dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="9dp"
+                android:text="3+"
+                android:textColor="#1D1E20"
+                android:textSize="21sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="57dp"
+                android:layout_height="12dp"
+                android:text="возраст"
+                android:textColor="#B6B6B6"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:backgroundTint="#D7DFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="20dp"
+        android:text="Установить"
+        android:textColor="@color/black"
+        android:layout_marginTop="32.5dp"/>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="239dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="33dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="137dp"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_marginStart="10dp"
+                android:id="@+id/image2"
+                android:layout_width="137dp"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_marginStart="10dp"
+                android:id="@+id/image3"
+                android:layout_width="137dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:textSize="16sp"
+        android:text="Описание"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="Госуслуги это ваш друг в России, тут хранятся все ваши данные, так что аккуратнее с мошенниками. Этот текст не несёт никакой смысловой нагрузки, он нужен для композиции. Этот текст не несёт никакой смысловой нагрузки, он нужен для композиции. Этот текст не несёт никакой смысловой нагрузки, он нужен для композиции. Этот текст не несёт никакой смысловой нагрузки, он нужен для композиции. Этот текст не несёт никакой смысловой нагрузки, он нужен для композиции. Этот текст не несёт никакой смысловой нагрузки, он нужен для композиции."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        android:layout_marginStart="20dp"
+        android:textSize="14sp"
+        android:layout_marginEnd="20dp"/>
+
+    <FrameLayout
+
+        android:id="@+id/dimScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone"
+        android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/dimView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"/>
+    </FrameLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
