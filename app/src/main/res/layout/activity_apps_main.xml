@@ -560,6 +560,49 @@
 
     </FrameLayout>
 
+    <FrameLayout
+
+        android:id="@+id/dimScreen2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_marginBottom="83dp">
+
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="290dp"
+            android:layout_height="264dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="119dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="114dp"
+            android:layout_gravity="bottom"
+            android:background="#000B35">
+
+            <TextView
+                android:layout_width="286dp"
+                android:layout_height="90dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Если нажать на иконку приложения,\n то откроется карточка приложения."
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

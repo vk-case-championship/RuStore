@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gos_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -225,6 +226,48 @@
         android:layout_margin="15dp"/>
     </FrameLayout>
 
+    <FrameLayout
+
+        android:id="@+id/dimScreen2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        >
+
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="290dp"
+            android:layout_height="264dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            android:layout_marginTop="330dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="119dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="114dp"
+            android:layout_gravity="bottom"
+            android:background="#000B35">
+
+            <TextView
+                android:layout_width="286dp"
+                android:layout_height="90dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Тут вы можете найти\nвсю нужную информацию\n о приложении и скачать его."
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
